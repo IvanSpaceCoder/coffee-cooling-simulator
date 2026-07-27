@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Coffee Cooling Simulator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+<div class="container">
+    <h1>☕ Coffee Cooling Simulator</h1>
+    <p class="version">Version 1.0</p>
+
+    <h3>By Ivan</h3>
+    <p>Predict how a cup of coffee cools over time using Newton's Law of Cooling. </p>
+
+<div class="content">
+
+    <div class="left-panel">
+        <div>
+
+        <label for="initialTemp">
+    Initial Temperature (°F):
+</label>
+
+
+
+<input id="initialTemp" type="number" value="100">
+</div>
+
+<div>
+<label for="roomTemp">Room Temperature (°F): </label>
+
+
+<input id="roomTemp" type="number" value="20">
+</div>
+
+<div>
+<label for="coolingConstant">Cooling Constant (k): </label>
+
+
+
+<input id="coolingConstant" type="number" value="0.1">
+</div>
+
+<div>
+<label for="time" >Time (minutes): </label>
+
+
+<input id="time" type="number" value="15">
+</div>
+
+<button id="simulateButton">
+    Simulate
+</button>
+
+<h2>Simulation Results</h2>
+
+<div class="results-card">
+
+    <div class="result-item">
+        <span>🌡 Final Temperature</span>
+        <strong id="finalTemp">-- °F</strong>
+    </div>
+
+    <div class="result-item">
+        <span>📉 Temperature Drop</span>
+        <strong id="tempDrop">-- °F</strong>
+    </div>
+
+    <div class="result-item">
+        <span>🏠 Difference from Room</span>
+        <strong id="roomDifference">-- °F</strong>
+    </div>
+
+    <div class="result-item">
+        <span>🧊 Cooling Status</span>
+        <strong id="statusText">--</strong>
+    </div>
+
+</div>
+    
+
+    </div>
+
+    <div class="right-panel">
+
+        <p class="quote">
+    Mathematics describes reality.
+</p>
+
+<p class="equation">
+    T(t) = Ta + (T0 − Ta)e<sup>−kt</sup>
+</p>
+
+
+        <canvas id="temperatureChart"></canvas>
+
+    </div>
+
+</div>
+
+<div class="coffee-container">
+
+        <div class="steam-container cold">
+            <div class="steam"></div>
+            <div class="steam"></div>
+            <div class="steam"></div>
+        </div>
+
+        <div class="cup">
+            <div class="coffee"></div>
+            
+            
+            <div class="cup-band">
+                ΔT
+            </div>
+            
+        </div>
+        <div class="handle"></div>
+        
+<div class="cup-shadow"></div>
+
+
+<script src="script.js"></script>
+
+
+
+
+</body>
+
+</html>
