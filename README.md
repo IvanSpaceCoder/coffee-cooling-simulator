@@ -83,6 +83,10 @@ Developer
 
 Created by Ivan
 
+## 🌐 Live Demo
+
+👉 https://ivanspacecoder.github.io/coffee-cooling-simulator/
+
 Coffee Cooling Simulator — Version 1.0
 
 Per Aspera Ad Astra!
